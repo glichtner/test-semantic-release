@@ -49,8 +49,7 @@ jobs:
       - name: Python Semantic Release
         uses: python-semantic-release/python-semantic-release@master
         with:
-          root_options: >
-            ${{ github.event.inputs.noop == 'true' && '--noop' || '' }}
+          root_options: ${{ github.event.inputs.noop == 'true' && '--noop' || '' }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: ${{ github.event.inputs.releaseType }}
           prerelease_token: ${{ github.event.inputs.prerelease_token }}
@@ -60,6 +59,5 @@ jobs:
           changelog: 'true'
           vcs_release: 'true'
           build_metadata: ${{ github.event.inputs.add_branch_date == 'true' && format('{0}.{1}', github.ref_name, env.CURRENT_DATE) || '' }}
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
