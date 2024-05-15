@@ -34,7 +34,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    #concurrency: release
+    concurrency: release
     permissions:
       id-token: write
       contents: write
