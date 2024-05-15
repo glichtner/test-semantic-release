@@ -2,7 +2,7 @@
 
 
 
-## v1.0.0+main.20240515 (2024-05-15)
+## v0.1.0 (2024-05-15)
 
 ### Ci
 
@@ -17,6 +17,8 @@
 * feat: added sem rel ([`a095abb`](https://github.com/glichtner/test-semantic-release/commit/a095abb5220999e888f2b683ef142eb353b13d6a))
 
 ### Fix
+
+* fix: prelease token ([`a735bbb`](https://github.com/glichtner/test-semantic-release/commit/a735bbbda35c2497018747ddcc8c88cc8b3860e2))
 
 * fix: remove concurrency ([`78c4a18`](https://github.com/glichtner/test-semantic-release/commit/78c4a18b2f0e789a3179b793987ede96c55cab59))
 
