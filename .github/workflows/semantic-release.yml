@@ -61,7 +61,7 @@ jobs:
         with:
           root_options: ${{ github.event.inputs.noop == 'true' && '--noop' || '' }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          force: ${{ github.event.inputs.releaseType == 'auto' && '' || github.event.inputs.releaseType }}
+          force: ${{ github.event.inputs.releaseType != 'auto' && github.event.inputs.releaseType || '' }}
           prerelease_token: ${{ github.event.inputs.prerelease_token }}
           commit: 'true'
           tag: 'true'
