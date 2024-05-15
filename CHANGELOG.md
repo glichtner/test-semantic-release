@@ -2,6 +2,13 @@
 
 
 
+## v0.2.0 (2024-05-15)
+
+### Feature
+
+* feat: add github actor ([`34da0fa`](https://github.com/glichtner/test-semantic-release/commit/34da0faa489ed2b2128de85b77c4fd37cf2e92ff))
+
+
 ## v0.1.0 (2024-05-15)
 
 ### Ci
